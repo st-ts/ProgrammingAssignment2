@@ -1,8 +1,9 @@
 ## The functions below cache an inverse matrix of
-## a given matrix X. If no inverse matrix exists,
-## it is computed and cached.
+## a given matrix X and retrieve it later. If no 
+## inverse exists, it is computed and cached.
 
-## A function that creates an object with smth??
+## A function that creates a list with functions
+## to make and cache matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         ## this function takes a matrix (assumed
@@ -21,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
              get_inv = get_inv)
 }
 
-## Write a short comment describing this function
+## A function to compute inverse of a matrix or takes
+## it from cached data
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
